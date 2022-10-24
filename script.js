@@ -45,7 +45,19 @@ btn_equal.addEventListener("click", () => {
   if (operator === "+") {
     result = Number(firstNumber) + Number(secondNumber);
   }
+  else if (operator === "-") {
+    result = Number(firstNumber) - Number(secondNumber);
+  }
+  else if (operator === "*") {
+    result = Number(firstNumber) * Number(secondNumber);
+  }
+  else if (operator === "/") {
+    result = Number(firstNumber) / Number(secondNumber);
+  }
   display.innerText = result;
+  firstNumber = result;
+  secondNumber = "";
+  operator = "";
 });
 
 btn_sign.addEventListener("click", () => {
